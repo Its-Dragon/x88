@@ -54,3 +54,4 @@ local function main()
 end
 
 callbacks.add(e_callbacks.DRAW_WATERMARK, main);
+callbacks.add(e_callbacks.SETUP_COMMAND, create_move);
