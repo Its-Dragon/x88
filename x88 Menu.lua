@@ -33,7 +33,7 @@ local function welcome()
         ping = local_player:get_prop("m_iPing");
         kd = kills / deaths;
     else
-        kills, deaths, ping, kd = "N/A", "N/A", "N/A", "N/A";
+        kills, deaths, ping, kd = "0", "0", "0", "0";
     end
     
     render.text(font, "x88Cheats", vec2_t(5, 35), color_t(192, 108, 129));
