@@ -36,7 +36,7 @@ local function welcome()
         kills, deaths, ping, kd = "N/A", "N/A", "N/A", "N/A";
     end
     
-    render.text(font, "x88Cheats", vec2(5, 35), color_t(192, 108, 129));
+    render.text(font, "x88Cheats", vec2_t(5, 35), color_t(192, 108, 129));
     render.text(font, "Hello " .. user.name .. " :)", vec2_t(300, 7), color_t(252, 211, 3));
 
     render.text(font, "Real: " .. math.floor(real * 100) / 100, vec2_t(300, 37), color_t(255, 255, 255));
