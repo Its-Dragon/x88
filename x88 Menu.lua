@@ -27,13 +27,13 @@ end
 local function welcome()
     local local_player = entity_list.get_local_player();
 
-    if engine.is_in_game() then
+    if kills == nil or deaths == nil or ping == nil then
+        kills, deaths, ping, kd = "0", "0", "0", "0";
+    elseif engine.is_in_game() then
         kills = local_player:get_prop("m_iKills");
         deaths = local_player:get_prop("m_iDeaths");
         ping = local_player:get_prop("m_iPing");
         kd = kills / deaths;
-    elseif kills == nil or deaths == nil or ping == nil then
-        kills, deaths, ping, kd = "0", "0", "0", "0";
     end
     
     render.text(font, "x88Cheats", vec2_t(5, 35), color_t(192, 108, 129));
