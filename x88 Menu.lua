@@ -16,7 +16,7 @@ local kd = nil
 local ping = nil
 
 local function create_move(cmd)
-    local local_player = entity.get_local_player();
+    local local_player = entity_list.get_local_player();
 
     if engine.is_in_game() then
         real = engine.get_view_angles();
